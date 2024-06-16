@@ -1,0 +1,284 @@
+
+<!-- Dette skal være tidslinjen vår -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<style>
+section {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 244, 161)
+}
+
+
+.timeline {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 20px 0;
+    position: relative;
+    width: 40%;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item.left::before {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #333;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+}
+
+.timeline-item.right::before {
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #333;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+}
+
+.timeline-item .content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.text-box {
+    margin-top: 10px;
+}
+.hehe {
+    padding: 20px;
+}
+</style>
+
+
+<body>
+
+    <header>
+        BULLSEYE!
+    </header>
+    <div class="hehe">vår tidslinje etter fra skolestart gjennom 2023! Ja, den dekker bare 
+        2023 fordi jeg er en surrebukk og ikke husker alle de viktige datorene i 
+    2024...</i>
+    </div>
+<section>
+    <div class="timeline">
+        <div class="timeline-item left">
+            <div class="content">
+                <img src="../Image/bilde1.png" alt="Bilde 1">
+                <div class="text-box">
+                    <h3>9. August</h3>
+                    <p>Aladdin - need I say more?</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <img src="../Image/bilde4.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>26. August</h3>
+                    <p>Altos Adventure:)</p>
+                    <p>Din første visitt!</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="content">
+                <img src="../Image/bilde11.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>15. September</h3>
+                    <p>Da vi var på escape room og etterpå
+                        vandret under samme paraply i regner<3
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <img src="../Image/bilde3.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>30. September</h3>
+                    <p>!FRAMSKRITT! <p></p>"pen indianer"</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="content">
+                <img src="../Image/bilde2.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>28. Oktober</h3>
+                    <p>Som den piraten du var, plyndret du hjertet mitt</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <img src="../Image/bilde5.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>3. November</h3>
+                    <p>Vårt første kyssssss</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="content">
+                <img src="../Image/bilde7.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>15. November</h3>
+                    <p>Vår første overnatting <p>(8. november trip er også nevneverdig) </p></p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <img src="../Image/bilde6.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>18. November</h3>
+                    <p>Bursdagen min!!!!! <p> Du var en engel, men det var jeg som falt...</p></p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="content">
+                <img src="../Image/bilde9.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>26. November</h3>
+                    <p>Jul i vinterland ❤️</p><p>ha'kke bilder men dette måtte med!</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <img src="../Image/bilde12.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>29. November</h3>
+                    <p>Min første eksepsjonelle kinoopplevelse noen gang</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="content">
+                <img src="../Image/bilde8.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>9. Desember</h3>
+                    <p>Pepperkakebaking (og natt til mitt første edru hook)</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="content">
+                <img src="../Image/bilde10.png" alt="Bilde 2">
+                <div class="text-box">
+                    <h3>27. Desember</h3>
+                    <p>...</p>
+                </div>
+            </div>
+        </div>
+        <!-- Legg til flere bilder her -->
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll('.timeline-item img');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.transform = 'scale(1.1)';
+                setTimeout(() => {
+                    entry.target.style.transform = 'scale(1)';
+                }, 300);
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    items.forEach(item => {
+        observer.observe(item);
+    });
+});
+
+</script>
+
+</section>
+
+
+ 
+</section>
+
+<footer>
+    <div class="stb">
+        Veldig glad i deg❤️ </div>
+    <img src="../Bilder/image.png" alt=".">
+    <img src="../Bilder/image2.png" alt=".">
+    <img src="../Bilder/image3.png" alt=".">
+    <img src="../Bilder/image4.png" alt=".">
+    <img src="../Bilder/image5.png" alt=".">
+    <img src="../Bilder/image6.png" alt=".">
+    <img src="../Bilder/image7.png" alt=".">
+    <img src="../Bilder/image8.png" alt=".">
+    <img src="../Bilder/image9.png" alt=".">
+</footer>
+
+    <body>
+    
+</html>
+        
+  
+
+       

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <header>
+        BULLSEYE!
+    </header>
+
+        <section>
+        <div class="stc">
+            <h3>DING DING DING</h3>
+        </div> 
+        <div class="stc"> 
+            Du er fantastisk. Trykk på knappen for å finne ut hvilke andre komplimenter som er deg verdig!
+             </div>
+            <div class="stc">
+                 <h1>Komplimentgenerator</h1>
+                <button id="generate-button">Generer Kompliment</button>
+                <p id="compliment"></p>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+    const compliments = 
+    ['definisjonen på geni', 'slående kjekk', 'superhelt', 'supertalent', 'omsorgsfull',
+     'nydelig', 'attraktiv', 'megapotensiale', 'Usain Bolt', 'fader Teresa', 'best',
+    'dust', 'Disneyprins', 'Romeo', 'enestående', 'ubeskrivelig perfekt', 'forbilde', 'omtenksom',
+    'atletisk', 'liga', 'best i alt', 'alene på toppen', 'musikalsk', 'teatralsk', 'synger som en engel', 'min profet',
+    'maskin', 'høydepunkt'];
+    const button = document.getElementById('generate-button');
+    const complimentDisplay = document.getElementById('compliment');
+
+    button.addEventListener('click', () => {
+        const randomIndex = Math.floor(Math.random() * compliments.length);
+        const randomCompliment = compliments[randomIndex];
+        complimentDisplay.textContent = randomCompliment;
+    });
+});
+
+            </script>
+
+
+
+         <div class="stc">
+            Veldig glad i deg❤️
+         </div>
+         
+        </section>
+
+        <footer>
+            <img src="../Bilder/image.png" alt=".">
+            <img src="../Bilder/image2.png" alt=".">
+            <img src="../Bilder/image3.png" alt=".">
+            <img src="../Bilder/image4.png" alt=".">
+            <img src="../Bilder/image5.png" alt=".">
+            <img src="../Bilder/image6.png" alt=".">
+            <img src="../Bilder/image7.png" alt=".">
+            <img src="../Bilder/image8.png" alt=".">
+            <img src="../Bilder/image9.png" alt=".">
+        </footer>

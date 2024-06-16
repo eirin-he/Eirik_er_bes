@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stile.css">
+</head>
+
+
+<body>
+    <header>
+        KOKEBOK
+    </header>
+
+    <section class="intro">
+        Kjære Eirik. La oss ta det første steget mot en verden av smaker. La den fuktige drømmen og vann i munnen bli virkelig ved å lære deg å lage mat!!
+    </section>
+
+<main class="uno">
+    <section class="dos">
+        <div class="tres">
+    <div class="container">
+        <div class="button" id="forretter">
+            <img src="../b/Picture 1.jpg" alt="Forretter">
+            <p>Forretter</p>
+        </div>
+        <div class="button" id="hovedretter">
+            <img src="../b/Picture 3.png" alt="Hovedretter">
+            <p>Hovedretter</p>
+        </div>
+        <div class="button" id="desserter">
+            <img src="path/to/desserter-bilde.jpg" alt="Desserter">
+            <p>Desserter</p>
+        </div>
+    </div>
+</div>
+<section class="tres">
+    <div class="recipe-menu" id="recipe-menu">
+        <div class="recipe-display">
+            <button id="prev">←</button>
+            <div class="recipe-info">
+                <img src="" alt="" id="recipe-image">
+                <p id="recipe-name"></p>
+            </div>
+            <button id="next">→</button>
+        </div>
+    </div>
+</section>
+
+
+    <script src="scripts.js"></script>
+
+</section>
+</main>
+</body>
+</html>
+
+<script>
+const recipes = {
+    forretter: [
+        { name: "Kokosnøttreker", image: "../b/Picture 1.jpg", link: "../kok/forrett1.html" },
+        { name: "Burger Slides", image: "../b/Picture 2.jpg", link: "../kok/forrett2.html" }
+    ],
+    hovedretter: [
+        { name: "BBQ-KYLLING", image: "../b/Picture 3.png", link: "../kok/hovedrett1.html" },
+        { name: "Hovedrett 2", image: "path/to/hovedrett2.jpg", link: "../kok/hovedrett2.html" },
+        { name: "Hovedrett 3", image: "path/to/hovedrett3.jpg", link: "hovedrett3.html" },
+    ],
+    desserter: [
+        { name: "Dessert 1", image: "path/to/dessert1.jpg", link: "dessert1.html" },
+        { name: "Dessert 2", image: "path/to/dessert2.jpg", link: "dessert2.html" },
+        { name: "Dessert 3", image: "path/to/dessert3.jpg", link: "dessert3.html" }
+    ]
+};
+
+let currentCategory = null;
+let currentIndex = 0;
+
+const buttons = document.querySelectorAll('.button');
+const recipeMenu = document.getElementById('recipe-menu');
+const recipeImage = document.getElementById('recipe-image');
+const recipeName = document.getElementById('recipe-name');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        currentCategory = button.id;
+        currentIndex = 0;
+        showRecipe();
+        recipeMenu.style.display = 'block';
+    });
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : recipes[currentCategory].length - 1;
+    showRecipe();
+});
+
+document.getElementById('next').addEventListener('click', () => {
+    currentIndex = (currentIndex < recipes[currentCategory].length - 1) ? currentIndex + 1 : 0;
+    showRecipe();
+});
+
+function showRecipe() {
+    const recipe = recipes[currentCategory][currentIndex];
+    recipeImage.src = recipe.image;
+    recipeName.textContent = recipe.name;
+    recipeImage.parentElement.href = recipe.link;
+}
+
+recipeImage.parentElement.addEventListener('click', () => {
+    if (currentCategory !== null) {
+        window.location.href = recipes[currentCategory][currentIndex].link;
+    }
+});
+</script>
